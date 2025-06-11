@@ -1,6 +1,6 @@
 // src/components/sections/SolutionsSection.tsx
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
-import { Code2, Palette, MonitorSmartphone, CheckCircle, Brain, FileCode } from 'lucide-react';
+import { Code2, Palette, MonitorSmartphone, CheckCircle, Brain, FileCode, Users } from 'lucide-react';
 import type { LucideIcon } from 'lucide-react';
 
 interface Solution {
@@ -46,6 +46,13 @@ const solutions: Solution[] = [
     problem: "Need robust, scalable, and versatile applications for data science, web backends, or automation?",
     solution: "Our Python development services deliver high-quality applications for various needs, from backend APIs and web scraping to data analysis and machine learning.",
     features: ["Django/Flask Web Apps", "Data Science & ML", "Automation Scripts", "API Development"]
+  },
+  {
+    icon: Users,
+    title: 'Digital Strategy Consultation',
+    problem: "Unsure how to navigate the digital landscape or which solutions best fit your business goals?",
+    solution: "We offer expert consultation to help you define a clear digital strategy, identify opportunities, and choose the right technologies to achieve your objectives.",
+    features: ["Strategic Planning", "Technology Roadmapping", "Digital Transformation Guidance", "Market & Competitive Analysis"]
   },
 ];
 
