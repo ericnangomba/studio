@@ -62,11 +62,11 @@ export default function AboutUsSection({ id }: AboutUsSectionProps) {
           <div className="relative h-80 md:h-96 lg:h-[500px] rounded-lg overflow-hidden shadow-xl">
             <Image
               src="https://placehold.co/600x800.png"
-              alt="Image of a modern tech-style building"
+              alt="Modern Jertine Tech office building in Cape Town, featuring a large sign with company name and tagline, overlooking the city and Table Mountain."
               layout="fill"
               objectFit="cover"
               className="transform hover:scale-105 transition-transform duration-500"
-              data-ai-hint="tech building"
+              data-ai-hint="Jertine Tech building"
             />
           </div>
         </div>
@@ -74,3 +74,4 @@ export default function AboutUsSection({ id }: AboutUsSectionProps) {
     </section>
   );
 }
+
