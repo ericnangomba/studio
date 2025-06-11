@@ -4,37 +4,37 @@
 
 @layer base {
   :root {
-    --background: 210 40% 98%; /* Default Light Theme: Almost White */
-    --foreground: 210 20% 20%; /* Default Light Theme: Dark Slate Blue/Gray */
+    --background: 210 40% 98%; /* Modern Light Theme: Almost White */
+    --foreground: 210 20% 20%; /* Modern Light Theme: Dark Slate Blue/Gray */
 
-    --card: 0 0% 100%; /* Default Light Theme: White */
-    --card-foreground: 210 20% 20%; /* Default Light Theme: Dark Slate Blue/Gray */
+    --card: 0 0% 100%; /* Modern Light Theme: White */
+    --card-foreground: 210 20% 20%; /* Modern Light Theme: Dark Slate Blue/Gray */
 
-    --popover: 0 0% 100%; /* Default Light Theme: White */
-    --popover-foreground: 210 20% 20%; /* Default Light Theme: Dark Slate Blue/Gray */
+    --popover: 0 0% 100%; /* Modern Light Theme: White */
+    --popover-foreground: 210 20% 20%; /* Modern Light Theme: Dark Slate Blue/Gray */
 
-    --primary: 195 77% 45%; /* Default Light Theme: Modern Teal/Blue */
-    --primary-foreground: 0 0% 100%; /* Default Light Theme: White */
+    --primary: 195 77% 45%; /* Modern Light Theme: Modern Teal/Blue */
+    --primary-foreground: 0 0% 100%; /* Modern Light Theme: White */
 
-    --secondary: 210 30% 90%; /* Default Light Theme: Very Light Grayish Blue */
-    --secondary-foreground: 210 20% 30%; /* Default Light Theme: Darker Slate Blue/Gray */
+    --secondary: 210 30% 90%; /* Modern Light Theme: Very Light Grayish Blue */
+    --secondary-foreground: 210 20% 30%; /* Modern Light Theme: Darker Slate Blue/Gray */
 
-    --muted: 210 25% 94%; /* Default Light Theme: Light Gray */
-    --muted-foreground: 210 15% 50%; /* Default Light Theme: Medium Gray */
+    --muted: 210 25% 94%; /* Modern Light Theme: Light Gray */
+    --muted-foreground: 210 15% 50%; /* Modern Light Theme: Medium Gray */
 
-    --accent: 25 95% 53%; /* Default Light Theme: Vibrant Orange */
-    --accent-foreground: 0 0% 100%; /* Default Light Theme: White */
+    --accent: 25 95% 53%; /* Modern Light Theme: Vibrant Orange */
+    --accent-foreground: 0 0% 100%; /* Modern Light Theme: White */
 
-    --destructive: 0 84% 60%; /* Default Light Theme: Bright Red */
-    --destructive-foreground: 0 0% 100%; /* Default Light Theme: White */
+    --destructive: 0 84% 60%; /* Modern Light Theme: Bright Red */
+    --destructive-foreground: 0 0% 100%; /* Modern Light Theme: White */
 
-    --border: 210 20% 88%; /* Default Light Theme: Light Gray */
-    --input: 210 20% 88%; /* Default Light Theme: Light Gray */
-    --ring: 25 95% 53%; /* Default Light Theme: Vibrant Orange for Focus Rings */
+    --border: 210 20% 88%; /* Modern Light Theme: Light Gray */
+    --input: 210 20% 88%; /* Modern Light Theme: Light Gray */
+    --ring: 25 95% 53%; /* Modern Light Theme: Vibrant Orange for Focus Rings */
 
     --radius: 0.5rem;
 
-    /* Sidebar variables, adjusted for the default light theme */
+    /* Sidebar variables, adjusted for the modern light theme */
     --sidebar-background: 210 30% 96%; /* Slightly off-white */
     --sidebar-foreground: 210 20% 25%; /* Dark Slate for text */
     --sidebar-primary: 25 95% 53%; /* Orange accent for interactive elements */
@@ -51,7 +51,7 @@
     --chart-5: 27 87% 67%;
   }
 
-  /* Metaverse Dark Theme */
+  /* Metaverse Dark Theme (kept for potential future use or toggling) */
   .dark {
     --background: 270 30% 10%; /* Dark Violet/Indigo */
     --foreground: 0 0% 98%;    /* Almost White */
