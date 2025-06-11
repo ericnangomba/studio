@@ -9,7 +9,7 @@
        2. #27233A (Gunmetal) -> hsl(249, 23%, 18%)
        3. #505168 (Independence) -> hsl(238, 14%, 36%)
        4. #B3C0A4 (Ash Grey) -> hsl(87, 22%, 70%)
-       5. #DCC48E (Pale Gold) -> hsl(45, 55%, 71%)
+       5. #f9a437 (New Orange Accent) -> hsl(34, 94%, 60%)
     */
     --background: 76 43% 90%; /* Eggshell */
     --foreground: 249 23% 18%; /* Gunmetal */
@@ -29,7 +29,7 @@
     --muted: 87 22% 85%; /* Lighter Ash Grey for muted backgrounds */
     --muted-foreground: 238 14% 45%; /* Slightly lighter Independence for muted text */
 
-    --accent: 45 55% 71%; /* Pale Gold */
+    --accent: 34 94% 60%; /* New Orange Accent */
     --accent-foreground: 249 23% 18%; /* Gunmetal - for text on accent */
 
     --destructive: 0 84% 60%; /* Standard Red */
@@ -37,25 +37,25 @@
 
     --border: 87 22% 75%; /* Slightly darker Ash Grey for borders */
     --input: 87 22% 75%;  /* Same as border */
-    --ring: 45 55% 71%; /* Pale Gold for Focus Rings */
+    --ring: 34 94% 60%; /* New Orange Accent for Focus Rings */
 
     --radius: 0.5rem;
 
     /* Sidebar variables, adjusted for the new theme */
     --sidebar-background: 76 43% 94%; /* Slightly lighter Eggshell */
     --sidebar-foreground: 249 23% 18%; /* Gunmetal text */
-    --sidebar-primary: 45 55% 71%; /* Pale Gold accent for interactive elements */
+    --sidebar-primary: 34 94% 60%; /* New Orange Accent for interactive elements */
     --sidebar-primary-foreground: 249 23% 18%; /* Gunmetal text on accent */
     --sidebar-accent: 87 22% 80%; /* Lighter Ash Grey for hover backgrounds */
     --sidebar-accent-foreground: 249 23% 18%; /* Gunmetal for text on hover */
     --sidebar-border: 87 22% 75%; /* Ash Grey border */
-    --sidebar-ring: 45 55% 71%; /* Pale Gold for focus rings */
+    --sidebar-ring: 34 94% 60%; /* New Orange Accent for focus rings */
 
-    --chart-1: 45 55% 71%;   /* Pale Gold */
+    --chart-1: 34 94% 60%;   /* New Orange Accent */
     --chart-2: 87 22% 70%;    /* Ash Grey */
     --chart-3: 238 14% 36%;   /* Independence */
     --chart-4: 249 23% 18%;   /* Gunmetal */
-    --chart-5: 45 50% 80%;    /* Lighter Pale Gold */
+    --chart-5: 34 88% 70%;    /* Lighter New Orange Accent */
   }
 
   /* Metaverse Dark Theme (kept for potential future use or toggling) */
