@@ -1,3 +1,4 @@
+
 // src/ai/flows/ai-faq.ts
 'use server';
 /**
@@ -31,7 +32,7 @@ const prompt = ai.definePrompt({
   output: {schema: AiFAQOutputSchema},
   prompt: `You are an AI assistant providing information about Jertine Tech, a company offering integrated digital solutions to small and medium-sized businesses in Cape Town and South Africa. Answer the following question about Jertine Tech.
 
-If the question is about something you don't have specific information on (e.g., specific payment methods like Bitcoin, internal company policies not publicly available, or topics unrelated to Jertine Tech's services, process, or general pricing), you MUST respond EXACTLY with the following phrase: "THANK YOU FOR YOUR QUESTION PLEASE CONTACT JERTINE TECH FURTHER DETAILS ON THE PROVIDED CONTACT FORM"
+If the question is about something you don't have specific information on (e.g., specific payment methods like Bitcoin, internal company policies not publicly available, or topics unrelated to Jertine Tech's services, process, or general pricing), you MUST respond EXACTLY with the following phrase: "THANK YOU FOR THE QUESTION, PLEASE CONTACT JERTINE TECH FOR FURTHER DETAILS ON THE PROVIDED CONTACT FORM"
 
 Do not try to answer questions if you are not confident or if the information is not part of your training.
 
@@ -49,3 +50,4 @@ const aiFAQFlow = ai.defineFlow(
     return output!;
   }
 );
+
