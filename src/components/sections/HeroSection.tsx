@@ -19,7 +19,7 @@ export default function HeroSection({ id }: HeroSectionProps) {
   return (
     <section 
       id={id} 
-      className="min-h-screen flex items-center justify-center bg-gradient-to-br from-[hsl(var(--primary))] to-[hsl(208,69%,23%)] text-primary-foreground relative overflow-hidden"
+      className="min-h-screen flex items-center justify-center bg-gradient-to-br from-[hsl(var(--primary))] to-[hsl(111,14%,20%)] text-primary-foreground relative overflow-hidden"
     >
       <div className="absolute inset-0 opacity-10">
          {/* You can add a subtle background pattern or image here if desired */}
@@ -39,7 +39,7 @@ export default function HeroSection({ id }: HeroSectionProps) {
             <Button 
               size="lg" 
               variant="outline" 
-              className="border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary" 
+              className="border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-[hsl(var(--primary))] data-[state=open]:bg-primary-foreground data-[state=open]:text-[hsl(var(--primary))]" 
               onClick={() => {
                 const solutionsSection = document.getElementById('solutions');
                 if (solutionsSection) {

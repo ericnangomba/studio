@@ -4,51 +4,57 @@
 
 @layer base {
   :root {
-    --background: 210 40% 98%; /* Modern Light Theme: Almost White */
-    --foreground: 210 20% 20%; /* Modern Light Theme: Dark Slate Blue/Gray */
+    /* New Palette:
+       1. #3E503C (Dark Olive Green) -> hsl(111, 14%, 28%)
+       2. #7F8B6A (Muted Olive Green) -> hsl(81, 15%, 48%)
+       3. #F3ECDB (Off-White/Cream) -> hsl(40, 56%, 90%)
+       4. #FF6F3D (Vibrant Orange/Coral) -> hsl(16, 100%, 62%)
+    */
+    --background: 40 56% 90%; /* #F3ECDB */
+    --foreground: 111 14% 28%; /* #3E503C */
 
-    --card: 0 0% 100%; /* Modern Light Theme: White */
-    --card-foreground: 210 20% 20%; /* Modern Light Theme: Dark Slate Blue/Gray */
+    --card: 0 0% 100%; /* White for cards */
+    --card-foreground: 111 14% 28%; /* #3E503C */
 
-    --popover: 0 0% 100%; /* Modern Light Theme: White */
-    --popover-foreground: 210 20% 20%; /* Modern Light Theme: Dark Slate Blue/Gray */
+    --popover: 0 0% 100%; /* White for popovers */
+    --popover-foreground: 111 14% 28%; /* #3E503C */
 
-    --primary: 208 69% 28%; /* New: Dark Slate Blue from #154d7a */
-    --primary-foreground: 0 0% 100%; /* Modern Light Theme: White */
+    --primary: 111 14% 28%; /* #3E503C */
+    --primary-foreground: 40 56% 90%; /* #F3ECDB - Cream text on primary */
 
-    --secondary: 210 30% 90%; /* Modern Light Theme: Very Light Grayish Blue */
-    --secondary-foreground: 210 20% 30%; /* Modern Light Theme: Darker Slate Blue/Gray */
+    --secondary: 81 15% 48%; /* #7F8B6A */
+    --secondary-foreground: 0 0% 100%; /* White - for text on secondary */
 
-    --muted: 210 25% 94%; /* Modern Light Theme: Light Gray */
-    --muted-foreground: 210 15% 50%; /* Modern Light Theme: Medium Gray */
+    --muted: 40 56% 85%; /* Slightly darker cream for muted backgrounds */
+    --muted-foreground: 81 15% 40%; /* Darker muted olive for muted text */
 
-    --accent: 25 95% 53%; /* Modern Light Theme: Vibrant Orange */
-    --accent-foreground: 0 0% 100%; /* Modern Light Theme: White */
+    --accent: 16 100% 62%; /* #FF6F3D */
+    --accent-foreground: 0 0% 100%; /* White */
 
-    --destructive: 0 84% 60%; /* Modern Light Theme: Bright Red */
-    --destructive-foreground: 0 0% 100%; /* Modern Light Theme: White */
+    --destructive: 0 84% 60%; /* Standard Red */
+    --destructive-foreground: 0 0% 100%; /* White */
 
-    --border: 210 20% 88%; /* Modern Light Theme: Light Gray */
-    --input: 210 20% 88%; /* Modern Light Theme: Light Gray */
-    --ring: 25 95% 53%; /* Modern Light Theme: Vibrant Orange for Focus Rings */
+    --border: 40 50% 83%; /* Desaturated/darker cream for borders */
+    --input: 40 50% 83%;  /* Same as border */
+    --ring: 16 100% 62%; /* #FF6F3D for Focus Rings */
 
     --radius: 0.5rem;
 
-    /* Sidebar variables, adjusted for the modern light theme */
-    --sidebar-background: 210 30% 96%; /* Slightly off-white */
-    --sidebar-foreground: 210 20% 25%; /* Dark Slate for text */
-    --sidebar-primary: 25 95% 53%; /* Orange accent for interactive elements */
+    /* Sidebar variables, adjusted for the new theme */
+    --sidebar-background: 40 56% 94%; /* Slightly lighter cream */
+    --sidebar-foreground: 111 14% 28%; /* Dark Olive text */
+    --sidebar-primary: 16 100% 62%; /* Orange accent for interactive elements */
     --sidebar-primary-foreground: 0 0% 100%; /* White text on orange */
-    --sidebar-accent: 195 70% 90%; /* Lighter teal for hover */
-    --sidebar-accent-foreground: 195 77% 30%; /* Darker teal for text on hover */
-    --sidebar-border: 210 20% 85%; /* Light gray border */
-    --sidebar-ring: 25 95% 53%; /* Orange for focus rings */
+    --sidebar-accent: 81 15% 88%; /* Lighter muted olive for hover backgrounds */
+    --sidebar-accent-foreground: 111 14% 28%; /* Dark olive for text on hover */
+    --sidebar-border: 40 50% 83%; /* Cream border */
+    --sidebar-ring: 16 100% 62%; /* Orange for focus rings */
 
-    --chart-1: 12 76% 61%;
-    --chart-2: 173 58% 39%;
-    --chart-3: 197 37% 24%;
-    --chart-4: 43 74% 66%;
-    --chart-5: 27 87% 67%;
+    --chart-1: 16 100% 62%;   /* Accent Orange */
+    --chart-2: 81 15% 48%;    /* Secondary Muted Green */
+    --chart-3: 111 14% 35%;   /* Darker Primary Olive */
+    --chart-4: 16 80% 70%;   /* Lighter/Softer Accent Orange */
+    --chart-5: 81 20% 65%;    /* Lighter/Softer Secondary Green */
   }
 
   /* Metaverse Dark Theme (kept for potential future use or toggling) */
