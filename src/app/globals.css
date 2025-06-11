@@ -5,10 +5,10 @@
 
 @layer base {
   :root {
-    /* New Palette from image:
+    /* Palette from previous image:
        1. #0C243C (Blue Zodiac) -> hsl(210, 67%, 14%)
        2. #C9D1D5 (Tiara) -> hsl(210, 16%, 84%)
-       3. #55C2C3 (Fountain Blue) -> hsl(180, 53%, 55%)
+       3. #f9514f (New Accent Red/Coral) -> hsl(1, 94%, 64%)
        4. #7E8C9C (Regent Gray) -> hsl(210, 11%, 56%)
     */
     --background: 210 16% 84%; /* Tiara */
@@ -29,7 +29,7 @@
     --muted: 210 16% 90%; /* Lighter Tiara for muted backgrounds */
     --muted-foreground: 210 11% 40%; /* Darker Regent Gray for muted text */
 
-    --accent: 180 53% 55%; /* Fountain Blue */
+    --accent: 1 94% 64%; /* New Accent Red/Coral from #f9514f */
     --accent-foreground: 210 67% 14%; /* Blue Zodiac - for text on accent */
 
     --destructive: 0 84% 60%; /* Standard Red */
@@ -37,25 +37,25 @@
 
     --border: 210 11% 70%; /* Lighter Regent Gray for borders */
     --input: 210 11% 70%;  /* Same as border */
-    --ring: 180 53% 55%; /* Fountain Blue for Focus Rings */
+    --ring: 1 94% 64%; /* New Accent Red/Coral for Focus Rings */
 
     --radius: 0.5rem;
 
     /* Sidebar variables, adjusted for the new theme */
     --sidebar-background: 210 16% 90%; /* Slightly lighter Tiara */
     --sidebar-foreground: 210 67% 14%; /* Blue Zodiac text */
-    --sidebar-primary: 180 53% 55%; /* Fountain Blue for interactive elements */
+    --sidebar-primary: 1 94% 64%; /* New Accent Red/Coral for interactive elements */
     --sidebar-primary-foreground: 210 67% 14%; /* Blue Zodiac text on accent */
     --sidebar-accent: 210 11% 75%; /* Lighter Regent Gray for hover backgrounds */
     --sidebar-accent-foreground: 210 67% 14%; /* Blue Zodiac for text on hover */
     --sidebar-border: 210 11% 65%; /* Regent Gray border */
-    --sidebar-ring: 180 53% 55%; /* Fountain Blue for focus rings */
+    --sidebar-ring: 1 94% 64%; /* New Accent Red/Coral for focus rings */
 
-    --chart-1: 180 53% 55%;   /* Fountain Blue */
+    --chart-1: 1 94% 64%;   /* New Accent Red/Coral */
     --chart-2: 210 11% 56%;   /* Regent Gray */
     --chart-3: 210 67% 24%;   /* Darker Blue Zodiac */
     --chart-4: 210 67% 14%;   /* Blue Zodiac */
-    --chart-5: 180 48% 65%;   /* Lighter Fountain Blue */
+    --chart-5: 1 89% 74%;   /* Lighter New Accent Red/Coral */
   }
 
   /* Metaverse Dark Theme (kept for potential future use or toggling) */
