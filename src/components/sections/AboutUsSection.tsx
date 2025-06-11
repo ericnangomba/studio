@@ -61,11 +61,11 @@ export default function AboutUsSection({ id }: AboutUsSectionProps) {
           <div className="relative h-80 md:h-96 lg:h-[500px] rounded-lg overflow-hidden shadow-xl">
             <Image
               src="https://placehold.co/600x800.png"
-              alt="Jertine Tech Team or Office"
+              alt="Jertine Tech office building in Cape Town with signage"
               layout="fill"
               objectFit="cover"
               className="transform hover:scale-105 transition-transform duration-500"
-              data-ai-hint="team collaboration"
+              data-ai-hint="tech building"
             />
           </div>
         </div>
