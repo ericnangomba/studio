@@ -40,7 +40,7 @@ export default function HeroSection({ id }: HeroSectionProps) {
             <Button
               size="lg"
               variant="outline"
-              className="border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-[hsl(var(--primary))] data-[state=open]:bg-primary-foreground data-[state=open]:text-[hsl(var(--primary))]"
+              className="border-primary-foreground text-primary bg-background hover:bg-primary-foreground hover:text-accent data-[state=open]:bg-primary-foreground data-[state=open]:text-[hsl(var(--primary))]"
               onClick={() => {
                 const solutionsSection = document.getElementById('solutions');
                 if (solutionsSection) {
@@ -85,3 +85,4 @@ export default function HeroSection({ id }: HeroSectionProps) {
 .animate-pulse-slow { animation: pulse-slow 8s infinite ease-in-out; }
 .animate-pulse-slower { animation: pulse-slower 10s infinite ease-in-out; }
 */
+
