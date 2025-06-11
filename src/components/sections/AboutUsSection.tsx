@@ -1,3 +1,4 @@
+
 // src/components/sections/AboutUsSection.tsx
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Target, Eye, HeartPulse } from 'lucide-react'; // Example icons
@@ -61,7 +62,7 @@ export default function AboutUsSection({ id }: AboutUsSectionProps) {
           <div className="relative h-80 md:h-96 lg:h-[500px] rounded-lg overflow-hidden shadow-xl">
             <Image
               src="https://placehold.co/600x800.png"
-              alt="Jertine Tech office building in Cape Town with signage"
+              alt="Image of a modern tech-style building"
               layout="fill"
               objectFit="cover"
               className="transform hover:scale-105 transition-transform duration-500"
