@@ -1,61 +1,61 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
   :root {
-    /* New Palette:
-       1. #EAEFD3 (Eggshell) -> hsl(76, 43%, 90%)
-       2. #27233A (Gunmetal) -> hsl(249, 23%, 18%)
-       3. #505168 (Independence) -> hsl(238, 14%, 36%)
-       4. #B3C0A4 (Ash Grey) -> hsl(87, 22%, 70%)
-       5. #f9a437 (New Orange Accent) -> hsl(34, 94%, 60%)
+    /* New Palette from image:
+       1. #0C243C (Blue Zodiac) -> hsl(210, 67%, 14%)
+       2. #C9D1D5 (Tiara) -> hsl(210, 16%, 84%)
+       3. #55C2C3 (Fountain Blue) -> hsl(180, 53%, 55%)
+       4. #7E8C9C (Regent Gray) -> hsl(210, 11%, 56%)
     */
-    --background: 76 43% 90%; /* Eggshell */
-    --foreground: 249 23% 18%; /* Gunmetal */
+    --background: 210 16% 84%; /* Tiara */
+    --foreground: 210 67% 14%; /* Blue Zodiac */
 
     --card: 0 0% 100%; /* White for cards, for contrast */
-    --card-foreground: 249 23% 18%; /* Gunmetal */
+    --card-foreground: 210 67% 14%; /* Blue Zodiac */
 
     --popover: 0 0% 100%; /* White for popovers */
-    --popover-foreground: 249 23% 18%; /* Gunmetal */
+    --popover-foreground: 210 67% 14%; /* Blue Zodiac */
 
-    --primary: 238 14% 36%; /* Independence */
-    --primary-foreground: 76 43% 90%; /* Eggshell - for text on primary */
+    --primary: 210 67% 14%; /* Blue Zodiac */
+    --primary-foreground: 210 16% 84%; /* Tiara - for text on primary */
 
-    --secondary: 87 22% 70%; /* Ash Grey */
-    --secondary-foreground: 249 23% 18%; /* Gunmetal - for text on secondary */
+    --secondary: 210 11% 56%; /* Regent Gray */
+    --secondary-foreground: 210 67% 14%; /* Blue Zodiac - for text on secondary */
 
-    --muted: 87 22% 85%; /* Lighter Ash Grey for muted backgrounds */
-    --muted-foreground: 238 14% 45%; /* Slightly lighter Independence for muted text */
+    --muted: 210 16% 90%; /* Lighter Tiara for muted backgrounds */
+    --muted-foreground: 210 11% 40%; /* Darker Regent Gray for muted text */
 
-    --accent: 34 94% 60%; /* New Orange Accent */
-    --accent-foreground: 249 23% 18%; /* Gunmetal - for text on accent */
+    --accent: 180 53% 55%; /* Fountain Blue */
+    --accent-foreground: 210 67% 14%; /* Blue Zodiac - for text on accent */
 
     --destructive: 0 84% 60%; /* Standard Red */
     --destructive-foreground: 0 0% 100%; /* White */
 
-    --border: 87 22% 75%; /* Slightly darker Ash Grey for borders */
-    --input: 87 22% 75%;  /* Same as border */
-    --ring: 34 94% 60%; /* New Orange Accent for Focus Rings */
+    --border: 210 11% 70%; /* Lighter Regent Gray for borders */
+    --input: 210 11% 70%;  /* Same as border */
+    --ring: 180 53% 55%; /* Fountain Blue for Focus Rings */
 
     --radius: 0.5rem;
 
     /* Sidebar variables, adjusted for the new theme */
-    --sidebar-background: 76 43% 94%; /* Slightly lighter Eggshell */
-    --sidebar-foreground: 249 23% 18%; /* Gunmetal text */
-    --sidebar-primary: 34 94% 60%; /* New Orange Accent for interactive elements */
-    --sidebar-primary-foreground: 249 23% 18%; /* Gunmetal text on accent */
-    --sidebar-accent: 87 22% 80%; /* Lighter Ash Grey for hover backgrounds */
-    --sidebar-accent-foreground: 249 23% 18%; /* Gunmetal for text on hover */
-    --sidebar-border: 87 22% 75%; /* Ash Grey border */
-    --sidebar-ring: 34 94% 60%; /* New Orange Accent for focus rings */
+    --sidebar-background: 210 16% 90%; /* Slightly lighter Tiara */
+    --sidebar-foreground: 210 67% 14%; /* Blue Zodiac text */
+    --sidebar-primary: 180 53% 55%; /* Fountain Blue for interactive elements */
+    --sidebar-primary-foreground: 210 67% 14%; /* Blue Zodiac text on accent */
+    --sidebar-accent: 210 11% 75%; /* Lighter Regent Gray for hover backgrounds */
+    --sidebar-accent-foreground: 210 67% 14%; /* Blue Zodiac for text on hover */
+    --sidebar-border: 210 11% 65%; /* Regent Gray border */
+    --sidebar-ring: 180 53% 55%; /* Fountain Blue for focus rings */
 
-    --chart-1: 34 94% 60%;   /* New Orange Accent */
-    --chart-2: 87 22% 70%;    /* Ash Grey */
-    --chart-3: 238 14% 36%;   /* Independence */
-    --chart-4: 249 23% 18%;   /* Gunmetal */
-    --chart-5: 34 88% 70%;    /* Lighter New Orange Accent */
+    --chart-1: 180 53% 55%;   /* Fountain Blue */
+    --chart-2: 210 11% 56%;   /* Regent Gray */
+    --chart-3: 210 67% 24%;   /* Darker Blue Zodiac */
+    --chart-4: 210 67% 14%;   /* Blue Zodiac */
+    --chart-5: 180 48% 65%;   /* Lighter Fountain Blue */
   }
 
   /* Metaverse Dark Theme (kept for potential future use or toggling) */

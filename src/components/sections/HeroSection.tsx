@@ -1,3 +1,4 @@
+
 // src/components/sections/HeroSection.tsx
 "use client";
 
@@ -17,9 +18,9 @@ export default function HeroSection({ id }: HeroSectionProps) {
   };
 
   return (
-    <section 
-      id={id} 
-      className="min-h-screen flex items-center justify-center bg-gradient-to-br from-[hsl(var(--primary))] to-[hsl(238,14%,28%)] text-primary-foreground relative overflow-hidden"
+    <section
+      id={id}
+      className="min-h-screen flex items-center justify-center bg-gradient-to-br from-[hsl(var(--primary))] to-[hsl(210,67%,20%)] text-primary-foreground relative overflow-hidden"
     >
       <div className="absolute inset-0 opacity-10">
          {/* You can add a subtle background pattern or image here if desired */}
@@ -36,10 +37,10 @@ export default function HeroSection({ id }: HeroSectionProps) {
             <Button size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90" onClick={handleScrollToContact}>
               Get a Free Consultation
             </Button>
-            <Button 
-              size="lg" 
-              variant="outline" 
-              className="border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-[hsl(var(--primary))] data-[state=open]:bg-primary-foreground data-[state=open]:text-[hsl(var(--primary))]" 
+            <Button
+              size="lg"
+              variant="outline"
+              className="border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-[hsl(var(--primary))] data-[state=open]:bg-primary-foreground data-[state=open]:text-[hsl(var(--primary))]"
               onClick={() => {
                 const solutionsSection = document.getElementById('solutions');
                 if (solutionsSection) {
