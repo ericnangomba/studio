@@ -4,45 +4,45 @@
 
 @layer base {
   :root {
-    --background: 208 33% 20%; /* #223343 Desaturated Dark Blue */
-    --foreground: 210 40% 98%; /* Almost White */
+    --background: 210 40% 98%; /* Almost White */
+    --foreground: 210 20% 20%; /* Dark Slate Blue/Gray */
 
-    --card: 210 33% 25%; /* #2a3f54 Slightly Lighter Dark Blue */
-    --card-foreground: 210 40% 98%;
+    --card: 0 0% 100%; /* White */
+    --card-foreground: 210 20% 20%; /* Dark Slate Blue/Gray */
 
-    --popover: 210 33% 22%; /* Darker Popover Background */
-    --popover-foreground: 210 40% 98%;
+    --popover: 0 0% 100%; /* White */
+    --popover-foreground: 210 20% 20%; /* Dark Slate Blue/Gray */
 
-    --primary: 207 69% 28%; /* #154d7a Deep Blue */
-    --primary-foreground: 210 40% 98%; /* Light text on Deep Blue */
+    --primary: 195 77% 45%; /* Modern Teal/Blue */
+    --primary-foreground: 0 0% 100%; /* White */
 
-    --secondary: 208 30% 30%; /* Medium Dark Blue */
-    --secondary-foreground: 210 40% 98%;
+    --secondary: 210 30% 90%; /* Very Light Grayish Blue */
+    --secondary-foreground: 210 20% 30%; /* Darker Slate Blue/Gray */
 
-    --muted: 208 25% 35%; /* Muted Dark Blue */
-    --muted-foreground: 210 30% 70%; /* Lighter Muted Text */
+    --muted: 210 25% 94%; /* Light Gray */
+    --muted-foreground: 210 15% 50%; /* Medium Gray */
 
-    --accent: 0 99% 72%; /* #fe7271 Vibrant Coral */
-    --accent-foreground: 208 50% 5%; /* Very Dark Blue/Black text on Coral */
+    --accent: 25 95% 53%; /* Vibrant Orange */
+    --accent-foreground: 0 0% 100%; /* White */
 
-    --destructive: 0 70% 50%; /* Clear Red */
-    --destructive-foreground: 0 0% 98%;
+    --destructive: 0 84% 60%; /* Bright Red */
+    --destructive-foreground: 0 0% 100%; /* White */
 
-    --border: 208 25% 38%; /* Border Color */
-    --input: 208 25% 38%; /* Input Border Color */
-    --ring: 0 99% 72%; /* Vibrant Coral for Focus Rings */
+    --border: 210 20% 88%; /* Light Gray */
+    --input: 210 20% 88%; /* Light Gray */
+    --ring: 25 95% 53%; /* Vibrant Orange for Focus Rings */
 
     --radius: 0.5rem;
 
-    /* Sidebar variables, adjusted for consistency with the dark theme */
-    --sidebar-background: 208 33% 18%; /* Darker than main background */
-    --sidebar-foreground: 210 40% 90%;
-    --sidebar-primary: 0 99% 72%; /* Coral for primary elements in sidebar */
-    --sidebar-primary-foreground: 208 50% 5%;
-    --sidebar-accent: 208 30% 28%;
-    --sidebar-accent-foreground: 210 40% 98%;
-    --sidebar-border: 208 25% 30%;
-    --sidebar-ring: 0 99% 72%;
+    /* Sidebar variables, adjusted for the new light theme */
+    --sidebar-background: 210 30% 96%; /* Slightly off-white */
+    --sidebar-foreground: 210 20% 25%; /* Dark Slate for text */
+    --sidebar-primary: 25 95% 53%; /* Orange accent for interactive elements */
+    --sidebar-primary-foreground: 0 0% 100%; /* White text on orange */
+    --sidebar-accent: 195 70% 90%; /* Lighter teal for hover */
+    --sidebar-accent-foreground: 195 77% 30%; /* Darker teal for text on hover */
+    --sidebar-border: 210 20% 85%; /* Light gray border */
+    --sidebar-ring: 25 95% 53%; /* Orange for focus rings */
 
     --chart-1: 12 76% 61%;
     --chart-2: 173 58% 39%;
@@ -51,7 +51,7 @@
     --chart-5: 27 87% 67%;
   }
 
-  /* Enforce dark theme as default by making .dark identical to :root */
+  /* This .dark class retains the original dark theme if needed later */
   .dark {
     --background: 208 33% 20%;
     --foreground: 210 40% 98%;
@@ -81,6 +81,12 @@
     --sidebar-accent-foreground: 210 40% 98%;
     --sidebar-border: 208 25% 30%;
     --sidebar-ring: 0 99% 72%;
+
+    --chart-1: 12 76% 61%;
+    --chart-2: 173 58% 39%;
+    --chart-3: 197 37% 24%;
+    --chart-4: 43 74% 66%;
+    --chart-5: 27 87% 67%;
   }
 }
 

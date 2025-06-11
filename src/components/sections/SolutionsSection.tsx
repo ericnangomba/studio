@@ -1,6 +1,6 @@
 // src/components/sections/SolutionsSection.tsx
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
-import { Code2, Palette, MonitorSmartphone, CheckCircle } from 'lucide-react';
+import { Code2, Palette, MonitorSmartphone, CheckCircle, Brain, FileCode } from 'lucide-react';
 import type { LucideIcon } from 'lucide-react';
 
 interface Solution {
@@ -32,6 +32,20 @@ const solutions: Solution[] = [
     problem: "Facing IT challenges that disrupt your workflow and productivity, with no reliable support in sight?",
     solution: "We offer prompt and reliable desktop and IT support services to keep your systems running smoothly, minimizing downtime and maximizing efficiency.",
     features: ["Troubleshooting & Repair", "Software Installation", "Network Setup", "Remote & On-site Support"]
+  },
+  {
+    icon: Brain,
+    title: 'AI Web Applications',
+    problem: "Want to leverage Artificial Intelligence in your web apps but find it too complex or costly?",
+    solution: "We design and develop intelligent web applications using cutting-edge AI technologies, enhancing user experience and automating processes.",
+    features: ["Custom AI Model Integration", "Natural Language Processing (NLP)", "Machine Learning Solutions", "AI-Powered Automation"]
+  },
+  {
+    icon: FileCode,
+    title: 'Python App Development',
+    problem: "Need robust, scalable, and versatile applications for data science, web backends, or automation?",
+    solution: "Our Python development services deliver high-quality applications for various needs, from backend APIs and web scraping to data analysis and machine learning.",
+    features: ["Django/Flask Web Apps", "Data Science & ML", "Automation Scripts", "API Development"]
   },
 ];
 
