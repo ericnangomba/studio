@@ -19,7 +19,7 @@ export default function HeroSection({ id }: HeroSectionProps) {
   return (
     <section 
       id={id} 
-      className="min-h-screen flex items-center justify-center bg-gradient-to-br from-[hsl(var(--primary))] to-[hsl(111,14%,20%)] text-primary-foreground relative overflow-hidden"
+      className="min-h-screen flex items-center justify-center bg-gradient-to-br from-[hsl(var(--primary))] to-[hsl(238,14%,28%)] text-primary-foreground relative overflow-hidden"
     >
       <div className="absolute inset-0 opacity-10">
          {/* You can add a subtle background pattern or image here if desired */}

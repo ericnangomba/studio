@@ -5,56 +5,57 @@
 @layer base {
   :root {
     /* New Palette:
-       1. #3E503C (Dark Olive Green) -> hsl(111, 14%, 28%)
-       2. #7F8B6A (Muted Olive Green) -> hsl(81, 15%, 48%)
-       3. #F3ECDB (Off-White/Cream) -> hsl(40, 56%, 90%)
-       4. #FF6F3D (Vibrant Orange/Coral) -> hsl(16, 100%, 62%)
+       1. #EAEFD3 (Eggshell) -> hsl(76, 43%, 90%)
+       2. #27233A (Gunmetal) -> hsl(249, 23%, 18%)
+       3. #505168 (Independence) -> hsl(238, 14%, 36%)
+       4. #B3C0A4 (Ash Grey) -> hsl(87, 22%, 70%)
+       5. #DCC48E (Pale Gold) -> hsl(45, 55%, 71%)
     */
-    --background: 40 56% 90%; /* #F3ECDB */
-    --foreground: 111 14% 28%; /* #3E503C */
+    --background: 76 43% 90%; /* Eggshell */
+    --foreground: 249 23% 18%; /* Gunmetal */
 
-    --card: 0 0% 100%; /* White for cards */
-    --card-foreground: 111 14% 28%; /* #3E503C */
+    --card: 0 0% 100%; /* White for cards, for contrast */
+    --card-foreground: 249 23% 18%; /* Gunmetal */
 
     --popover: 0 0% 100%; /* White for popovers */
-    --popover-foreground: 111 14% 28%; /* #3E503C */
+    --popover-foreground: 249 23% 18%; /* Gunmetal */
 
-    --primary: 111 14% 28%; /* #3E503C */
-    --primary-foreground: 40 56% 90%; /* #F3ECDB - Cream text on primary */
+    --primary: 238 14% 36%; /* Independence */
+    --primary-foreground: 76 43% 90%; /* Eggshell - for text on primary */
 
-    --secondary: 81 15% 48%; /* #7F8B6A */
-    --secondary-foreground: 0 0% 100%; /* White - for text on secondary */
+    --secondary: 87 22% 70%; /* Ash Grey */
+    --secondary-foreground: 249 23% 18%; /* Gunmetal - for text on secondary */
 
-    --muted: 40 56% 85%; /* Slightly darker cream for muted backgrounds */
-    --muted-foreground: 81 15% 40%; /* Darker muted olive for muted text */
+    --muted: 87 22% 85%; /* Lighter Ash Grey for muted backgrounds */
+    --muted-foreground: 238 14% 45%; /* Slightly lighter Independence for muted text */
 
-    --accent: 16 100% 62%; /* #FF6F3D */
-    --accent-foreground: 0 0% 100%; /* White */
+    --accent: 45 55% 71%; /* Pale Gold */
+    --accent-foreground: 249 23% 18%; /* Gunmetal - for text on accent */
 
     --destructive: 0 84% 60%; /* Standard Red */
     --destructive-foreground: 0 0% 100%; /* White */
 
-    --border: 40 50% 83%; /* Desaturated/darker cream for borders */
-    --input: 40 50% 83%;  /* Same as border */
-    --ring: 16 100% 62%; /* #FF6F3D for Focus Rings */
+    --border: 87 22% 75%; /* Slightly darker Ash Grey for borders */
+    --input: 87 22% 75%;  /* Same as border */
+    --ring: 45 55% 71%; /* Pale Gold for Focus Rings */
 
     --radius: 0.5rem;
 
     /* Sidebar variables, adjusted for the new theme */
-    --sidebar-background: 40 56% 94%; /* Slightly lighter cream */
-    --sidebar-foreground: 111 14% 28%; /* Dark Olive text */
-    --sidebar-primary: 16 100% 62%; /* Orange accent for interactive elements */
-    --sidebar-primary-foreground: 0 0% 100%; /* White text on orange */
-    --sidebar-accent: 81 15% 88%; /* Lighter muted olive for hover backgrounds */
-    --sidebar-accent-foreground: 111 14% 28%; /* Dark olive for text on hover */
-    --sidebar-border: 40 50% 83%; /* Cream border */
-    --sidebar-ring: 16 100% 62%; /* Orange for focus rings */
+    --sidebar-background: 76 43% 94%; /* Slightly lighter Eggshell */
+    --sidebar-foreground: 249 23% 18%; /* Gunmetal text */
+    --sidebar-primary: 45 55% 71%; /* Pale Gold accent for interactive elements */
+    --sidebar-primary-foreground: 249 23% 18%; /* Gunmetal text on accent */
+    --sidebar-accent: 87 22% 80%; /* Lighter Ash Grey for hover backgrounds */
+    --sidebar-accent-foreground: 249 23% 18%; /* Gunmetal for text on hover */
+    --sidebar-border: 87 22% 75%; /* Ash Grey border */
+    --sidebar-ring: 45 55% 71%; /* Pale Gold for focus rings */
 
-    --chart-1: 16 100% 62%;   /* Accent Orange */
-    --chart-2: 81 15% 48%;    /* Secondary Muted Green */
-    --chart-3: 111 14% 35%;   /* Darker Primary Olive */
-    --chart-4: 16 80% 70%;   /* Lighter/Softer Accent Orange */
-    --chart-5: 81 20% 65%;    /* Lighter/Softer Secondary Green */
+    --chart-1: 45 55% 71%;   /* Pale Gold */
+    --chart-2: 87 22% 70%;    /* Ash Grey */
+    --chart-3: 238 14% 36%;   /* Independence */
+    --chart-4: 249 23% 18%;   /* Gunmetal */
+    --chart-5: 45 50% 80%;    /* Lighter Pale Gold */
   }
 
   /* Metaverse Dark Theme (kept for potential future use or toggling) */
