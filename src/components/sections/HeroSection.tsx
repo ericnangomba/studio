@@ -17,7 +17,10 @@ export default function HeroSection({ id }: HeroSectionProps) {
   };
 
   return (
-    <section id={id} className="min-h-screen flex items-center justify-center bg-primary text-primary-foreground relative overflow-hidden">
+    <section 
+      id={id} 
+      className="min-h-screen flex items-center justify-center bg-gradient-to-br from-[hsl(var(--primary))] to-[hsl(208,69%,23%)] text-primary-foreground relative overflow-hidden"
+    >
       <div className="absolute inset-0 opacity-10">
          {/* You can add a subtle background pattern or image here if desired */}
       </div>
@@ -33,7 +36,17 @@ export default function HeroSection({ id }: HeroSectionProps) {
             <Button size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90" onClick={handleScrollToContact}>
               Get a Free Consultation
             </Button>
-            <Button size="lg" variant="outline" className="border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary" onClick={() => document.getElementById('solutions')?.scrollIntoView({behavior: 'smooth'})}>
+            <Button 
+              size="lg" 
+              variant="outline" 
+              className="border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary" 
+              onClick={() => {
+                const solutionsSection = document.getElementById('solutions');
+                if (solutionsSection) {
+                  solutionsSection.scrollIntoView({ behavior: 'smooth' });
+                }
+              }}
+            >
               Our Solutions
             </Button>
           </div>
