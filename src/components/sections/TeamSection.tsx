@@ -38,7 +38,7 @@ interface TeamSectionProps {
 export default function TeamSection({ id }: TeamSectionProps) {
   return (
     <section id={id} className="py-16 md:py-24 bg-secondary text-secondary-foreground">
-      <TeamSection id="team" /> {/* Give it an ID for navigation */}
+      {/* The recursive call <TeamSection id="team" /> was removed from here */}
       <div className="container mx-auto px-4 text-center">
         <h2 className="text-3xl md:text-4xl font-bold mb-12 font-headline">
           Meet Our <span className="text-primary">Team</span>
@@ -53,6 +53,7 @@ export default function TeamSection({ id }: TeamSectionProps) {
                   layout="fill"
                   objectFit="cover"
                   className="transform group-hover:scale-105 transition-transform duration-500"
+                  data-ai-hint="person portrait"
                 />
               </div>
               <CardContent className="p-6">
