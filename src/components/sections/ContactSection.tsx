@@ -185,13 +185,13 @@ export default function ContactSection({ id }: ContactSectionProps) {
               </div>
               <div className="flex items-center space-x-3">
                 <Phone className="h-6 w-6 text-accent flex-shrink-0" />
-                <a href="tel:+27123456789" className="hover:text-accent transition-colors">+27 (012) 345-6789 (Example)</a>
+                <a href="tel:+27123456789" className="hover:text-accent transition-colors">+27 (+27 82 325 6700) </a>
               </div>
               <div className="flex items-start space-x-3">
                 <MapPin className="h-6 w-6 text-accent flex-shrink-0 mt-1" />
                 <div>
-                  <p>123 Digital Avenue, Tech Park</p>
-                  <p>Cape Town, South Africa, 7925 (Example)</p>
+                  <p>21 Helenic Avenue, Green Point</p>
+                  <p>Cape Town, South Africa, 7925 </p>
                 </div>
               </div>
             </div>

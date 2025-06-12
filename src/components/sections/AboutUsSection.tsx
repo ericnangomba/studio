@@ -1,8 +1,8 @@
-
 // src/components/sections/AboutUsSection.tsx
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Target, Eye, HeartPulse } from 'lucide-react'; // Example icons
 import Image from 'next/image';
+import AboutJertineTechImage from '../../images/AboutJertineTech.png'; // Added import statement
 
 interface AboutUsSectionProps {
   id: string;
@@ -61,8 +61,8 @@ export default function AboutUsSection({ id }: AboutUsSectionProps) {
           </div>
           <div className="relative h-80 md:h-96 lg:h-[500px] rounded-lg overflow-hidden shadow-xl">
             <Image
-              src="https://placehold.co/600x800.png"
-              alt="Modern Jertine Tech office building in Cape Town, featuring a large sign with company name and tagline, overlooking the city and Table Mountain."
+              src={AboutJertineTechImage} // Modified src prop
+              alt="Modern Jertine Tech office building in Cape Town, featuring a large sign with company name and tagline, overlooking the city."
               layout="fill"
               objectFit="cover"
               className="transform hover:scale-105 transition-transform duration-500"
@@ -74,4 +74,3 @@ export default function AboutUsSection({ id }: AboutUsSectionProps) {
     </section>
   );
 }
-

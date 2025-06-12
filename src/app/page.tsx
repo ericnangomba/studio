@@ -9,6 +9,7 @@ import ProcessSection from '@/components/sections/ProcessSection';
 import TestimonialsSection from '@/components/sections/TestimonialsSection';
 import FaqSection from '@/components/sections/FaqSection';
 import ContactSection from '@/components/sections/ContactSection';
+import TeamSection from '@/components/sections/TeamSection';
 
 export default function HomePage() {
   return (
@@ -21,6 +22,7 @@ export default function HomePage() {
         <WhyChooseUsSection id="why-us" />
         <ProcessSection id="process" />
         <TestimonialsSection id="testimonials" />
+        <TeamSection id="team" />
         <FaqSection id="faq" />
         <ContactSection id="contact" />
       </main>
