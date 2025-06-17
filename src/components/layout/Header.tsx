@@ -5,8 +5,12 @@ import Link from 'next/link';
 import { useState, useEffect, useCallback } from 'react';
 import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
-import { Menu, X, Zap } from 'lucide-react';
+import { Menu, X } from 'lucide-react'; // No need for Zap anymore if replacing
 import { cn } from '@/lib/utils';
+import Image from 'next/image'; // Import Image component
+
+// Import your logo image here
+import YourCompanyLogo from '../../images/jertinetechlogo.png'; // ADJUST THIS PATH IF NECESSARY
 
 const navItems = [
   { label: 'Home', href: '#hero' },
@@ -70,9 +74,16 @@ export default function Header() {
     )}>
       <div className="container mx-auto px-4 flex items-center justify-between h-20">
         <Link href="/" passHref>
-          <div className="flex items-center space-x-2 cursor-pointer" onClick={() => handleNavLinkClick('#hero')}>
-            <Zap className="h-8 w-8 text-accent" />
-            <span className="text-2xl font-bold text-foreground font-headline">Jertine<span className="text-accent">Tech</span></span>
+          {/* Replace Zap icon and text with the Image component */}
+          <div className="flex items-center cursor-pointer" onClick={() => handleNavLinkClick('#hero')}>
+             <Image
+               src={YourCompanyLogo} // Use the imported logo variable
+               alt="JertineTech Company Logo" // Provide descriptive alt text
+               width={160} // !!! Adjust default desktop width as needed !!!
+               height={50} // !!! Adjust default desktop height as needed !!!
+               // Add responsive classes here if you want the size to change on different screen sizes
+               // className="w-[160px] h-[50px] md:w-[180px] md:h-[55px] lg:w-[200px] lg:h-[60px]" // Example responsive classes
+             />
           </div>
         </Link>
 
@@ -108,9 +119,15 @@ export default function Header() {
               <div className="flex flex-col h-full">
                 <div className="flex items-center justify-between p-4 border-b">
                    <Link href="/" passHref>
-                    <div className="flex items-center space-x-2 cursor-pointer" onClick={() => handleNavLinkClick('#hero')}>
-                      <Zap className="h-7 w-7 text-accent" />
-                      <span className="text-xl font-bold text-foreground font-headline">Jertine<span className="text-accent">Tech</span></span>
+                    {/* Replace Zap icon and text with the Image component in mobile menu */}
+                    <div className="flex items-center cursor-pointer" onClick={() => handleNavLinkClick('#hero')}>
+                       <Image
+                         src={YourCompanyLogo} // Use the imported logo variable
+                         alt="JertineTech Company Logo" // Provide descriptive alt text
+                         width={140} // !!! Adjust mobile width as needed !!!
+                         height={45} // !!! Adjust mobile height as needed !!!
+                         // Add responsive classes here if further adjustments are needed
+                       />
                     </div>
                   </Link>
                   <Button variant="ghost" size="icon" onClick={() => setIsMobileMenuOpen(false)}>

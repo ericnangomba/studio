@@ -1,108 +1,108 @@
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
   :root {
-    /* Palette from previous image:
-       1. #0C243C (Blue Zodiac) -> hsl(210, 67%, 14%)
-       2. #C9D1D5 (Tiara) -> hsl(210, 16%, 84%)
-       3. #f9514f (New Accent Red/Coral) -> hsl(1, 94%, 64%)
-       4. #7E8C9C (Regent Gray) -> hsl(210, 11%, 56%)
+    /* New Palette:
+       1. #000c60 (Very Dark Blue) -> hsl(233, 100%, 19%) - Primary
+       2. #faccb4 (Light Peachy-Orange) -> hsl(26, 91%, 92%) - Secondary (Swapped)
+       3. #e64068 (Vibrant Reddish-Pink) -> hsl(345, 78%, 57%) - Accent (Swapped)
     */
-    --background: 210 16% 84%; /* Tiara */
-    --foreground: 210 67% 14%; /* Blue Zodiac */
+    --background: 210 16% 84%; /* Keeping Tiara background for default theme */
+    --foreground: 233 100% 19%; /* Using New Primary color for default text */
 
     --card: 0 0% 100%; /* White for cards, for contrast */
-    --card-foreground: 210 67% 14%; /* Blue Zodiac */
+    --card-foreground: 233 100% 19%; /* Using New Primary color */
 
     --popover: 0 0% 100%; /* White for popovers */
-    --popover-foreground: 210 67% 14%; /* Blue Zodiac */
+    --popover-foreground: 233 100% 19%; /* Using New Primary color */
 
-    --primary: 210 67% 14%; /* Blue Zodiac */
-    --primary-foreground: 210 16% 84%; /* Tiara - for text on primary */
+    --primary: 233 100% 19%;    /* #000c60 */
+    --primary-foreground: 0 0% 98%; /* Almost White for text on primary */
 
-    --secondary: 210 11% 56%; /* Regent Gray */
-    --secondary-foreground: 210 67% 14%; /* Blue Zodiac - for text on secondary */
+    --secondary: 26 91% 92%;  /* #faccb4 (Swapped with accent) */
+    --secondary-foreground: 233 100% 19%; /* Dark Blue for text on secondary */
 
-    --muted: 210 16% 90%; /* Lighter Tiara for muted backgrounds */
-    --muted-foreground: 210 11% 40%; /* Darker Regent Gray for muted text */
+    --muted: 210 16% 90%; /* Keeping Lighter Tiara */
+    --muted-foreground: 210 11% 40%; /* Keeping Darker Regent Gray */
 
-    --accent: 1 94% 64%; /* New Accent Red/Coral from #f9514f */
-    --accent-foreground: 210 67% 14%; /* Blue Zodiac - for text on accent */
+    --accent: 345 78% 57%;     /* #e64068 (Swapped with secondary) */
+    --accent-foreground: 0 0% 98%; /* Almost White for text on accent */
 
-    --destructive: 0 84% 60%; /* Standard Red */
-    --destructive-foreground: 0 0% 100%; /* White */
+    --destructive: 0 84% 60%; /* Standard Red (kept) */
+    --destructive-foreground: 0 0% 100%; /* White (kept) */
 
-    --border: 210 11% 70%; /* Lighter Regent Gray for borders */
-    --input: 210 11% 70%;  /* Same as border */
-    --ring: 1 94% 64%; /* New Accent Red/Coral for Focus Rings */
+    --border: 210 11% 70%; /* Keeping Lighter Regent Gray for borders */
+    --input: 210 11% 70%;  /* Same as border (kept) */
+    --ring: 233 100% 19%; /* Using New Primary color for Focus Rings (kept from last change) */
 
     --radius: 0.5rem;
 
     /* Sidebar variables, adjusted for the new theme */
-    --sidebar-background: 210 16% 90%; /* Slightly lighter Tiara */
-    --sidebar-foreground: 210 67% 14%; /* Blue Zodiac text */
-    --sidebar-primary: 1 94% 64%; /* New Accent Red/Coral for interactive elements */
-    --sidebar-primary-foreground: 210 67% 14%; /* Blue Zodiac text on accent */
-    --sidebar-accent: 210 11% 75%; /* Lighter Regent Gray for hover backgrounds */
-    --sidebar-accent-foreground: 210 67% 14%; /* Blue Zodiac for text on hover */
-    --sidebar-border: 210 11% 65%; /* Regent Gray border */
-    --sidebar-ring: 1 94% 64%; /* New Accent Red/Coral for focus rings */
+    --sidebar-background: 210 16% 90%; /* Keeping Slightly lighter Tiara */
+    --sidebar-foreground: 233 100% 19%; /* Using New Primary color */
+    --sidebar-primary: 345 78% 57%; /* Using New Accent for interactive elements */
+    --sidebar-primary-foreground: 0 0% 98%; /* Almost White */
+    --sidebar-accent: 210 11% 75%; /* Keeping Lighter Regent Gray */
+    --sidebar-accent-foreground: 233 100% 19%; /* Using New Primary color */
+    --sidebar-border: 210 11% 65%; /* Keeping Regent Gray */
+    --sidebar-ring: 233 100% 19%; /* Using New Primary for focus rings (kept) */
 
-    --chart-1: 1 94% 64%;   /* New Accent Red/Coral */
-    --chart-2: 210 11% 56%;   /* Regent Gray */
-    --chart-3: 210 67% 24%;   /* Darker Blue Zodiac */
-    --chart-4: 210 67% 14%;   /* Blue Zodiac */
-    --chart-5: 1 89% 74%;   /* Lighter New Accent Red/Coral */
+    /* Chart colors, adjusted for the new theme */
+    --chart-1: 233 100% 19%;   /* #000c60 */
+    --chart-2: 345 78% 57%;   /* #e64068 */
+    --chart-3: 26 91% 92%;   /* #faccb4 */
+    --chart-4: 233 70% 30%;   /* Slightly lighter primary (kept) */
+    --chart-5: 345 60% 70%;   /* Slightly lighter secondary */
   }
 
   /* Metaverse Dark Theme (kept for potential future use or toggling) */
   .dark {
-    --background: 270 30% 10%; /* Dark Violet/Indigo */
-    --foreground: 0 0% 98%;    /* Almost White */
+    --background: 270 30% 10%; /* Dark Violet/Indigo (kept) */
+    --foreground: 0 0% 98%;    /* Almost White (kept) */
 
-    --card: 270 25% 15%;        /* Darker Violet/Indigo */
-    --card-foreground: 0 0% 98%; /* Almost White */
+    --card: 270 25% 15%;        /* Darker Violet/Indigo (kept) */
+    --card-foreground: 0 0% 98%; /* Almost White (kept) */
 
-    --popover: 270 25% 13%;     /* Slightly darker than card */
-    --popover-foreground: 0 0% 98%;
+    --popover: 270 25% 13%;     /* Slightly darker than card (kept) */
+    --popover-foreground: 0 0% 98%; /* Almost White (kept) */
 
-    --primary: 320 80% 55%;     /* Vibrant Pink/Magenta */
-    --primary-foreground: 0 0% 100%;
+    --primary: 233 100% 19%;    /* #000c60 (Kept) */
+    --primary-foreground: 0 0% 98%; /* Almost White (Kept) */
 
-    --secondary: 280 40% 30%;   /* Muted Purple */
-    --secondary-foreground: 0 0% 98%;
+    --secondary: 26 91% 92%;  /* #faccb4 (Swapped with accent) */
+    --secondary-foreground: 233 100% 19%; /* Dark Blue */
 
-    --muted: 270 20% 25%;       /* Dark Gray/Purple */
-    --muted-foreground: 270 10% 65%; /* Lighter Gray */
+    --muted: 270 20% 25%;       /* Dark Gray/Purple (kept) */
+    --muted-foreground: 270 10% 65%; /* Lighter Gray (kept) */
 
-    --accent: 350 90% 65%;      /* Bright Coral Pink */
-    --accent-foreground: 0 0% 100%;
+    --accent: 345 78% 57%;     /* #e64068 (Swapped with secondary) */
+    --accent-foreground: 0 0% 98%; /* Almost White */
 
-    --destructive: 0 70% 50%;   /* Standard Red */
-    --destructive-foreground: 0 0% 98%;
+    --destructive: 0 70% 50%;   /* Standard Red (kept) */
+    --destructive-foreground: 0 0% 98%; /* Almost White (kept) */
 
-    --border: 270 20% 20%;      /* Dark subtle border */
-    --input: 270 20% 22%;       /* Dark input background */
-    --ring: 320 80% 55%;        /* Primary accent for focus rings */
+    --border: 270 20% 20%;      /* Dark subtle border (kept) */
+    --input: 270 20% 22%;       /* Dark input background (kept) */
+    --ring: 233 100% 19%;        /* Using New Primary for Focus Rings (Kept) */
 
-    /* Sidebar variables for Metaverse Dark Theme */
-    --sidebar-background: 270 28% 12%;      /* Very dark violet */
-    --sidebar-foreground: 0 0% 90%;        /* Light Gray for text */
-    --sidebar-primary: 350 90% 65%;       /* Accent Coral for interactive elements */
-    --sidebar-primary-foreground: 0 0% 100%;/* White text on coral */
-    --sidebar-accent: 320 70% 45%;        /* Magenta for hover */
-    --sidebar-accent-foreground: 0 0% 98%; /* Almost white on hover */
-    --sidebar-border: 270 20% 18%;         /* Subtle dark border */
-    --sidebar-ring: 350 90% 65%;          /* Accent Coral for focus rings */
+    /* Sidebar variables for Metaverse Dark Theme, adjusted for new theme */
+    --sidebar-background: 270 28% 12%;      /* Very dark violet (kept) */
+    --sidebar-foreground: 0 0% 90%;        /* Light Gray for text (kept) */
+    --sidebar-primary: 345 78% 57%;       /* Using New Accent for interactive elements */
+    --sidebar-primary-foreground: 0 0% 98%;/* Almost white */
+    --sidebar-accent: 320 70% 45%;        /* Keeping Magenta for hover */
+    --sidebar-accent-foreground: 0 0% 98%; /* Almost white on hover (kept) */
+    --sidebar-border: 270 20% 18%;         /* Subtle dark border (kept) */
+    --sidebar-ring: 233 100% 19%;          /* Using New Primary for focus rings (Kept) */
 
-    --chart-1: 320 80% 60%; /* Pink */
-    --chart-2: 350 90% 70%; /* Coral */
-    --chart-3: 280 50% 50%; /* Purple */
-    --chart-4: 260 60% 65%; /* Indigo */
-    --chart-5: 0 0% 80%;    /* Light Gray */
+    /* Chart colors for Dark Theme, adjusted for new theme */
+    --chart-1: 233 100% 19%; /* #000c60 (Kept) */
+    --chart-2: 345 78% 57%; /* #e64068 */
+    --chart-3: 26 91% 92%; /* #faccb4 */
+    --chart-4: 233 70% 30%;   /* Slightly lighter primary (Kept) */
+    --chart-5: 345 60% 70%;   /* Slightly lighter secondary (Kept) */
   }
 }
 
@@ -118,4 +118,12 @@
     min-height: 100vh;
     overflow-x: hidden; /* Prevent horizontal scrolling */
   }
+
+  @media (max-width: 767px) {
+    /* Styles for screens smaller than md breakpoint */
+  }
+  @media (min-width: 1024px) {
+    /* Styles for screens lg breakpoint and up */
+  }  
+
 }

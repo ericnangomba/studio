@@ -1,64 +1,63 @@
-
 // src/components/sections/HeroSection.tsx
-"use client";
-
 import { Button } from '@/components/ui/button';
-import Image from 'next/image';
+import { ArrowRight } from 'lucide-react';
+import Link from 'next/link';
+import Image from 'next/image'; // Make sure Image is imported
+
+// Import your hero background image
+import HeroBackgroundImage from '../../images/hero-bg.jpg'; // ADJUST THIS PATH
 
 interface HeroSectionProps {
   id: string;
 }
 
 export default function HeroSection({ id }: HeroSectionProps) {
-  const handleScrollToContact = () => {
-    const contactSection = document.getElementById('contact');
-    if (contactSection) {
-      contactSection.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
-
   return (
     <section
       id={id}
-      className="min-h-screen flex items-center justify-center bg-gradient-to-br from-[hsl(var(--primary))] to-[hsl(210,67%,20%)] text-primary-foreground relative overflow-hidden"
+      className="relative min-h-screen flex items-center justify-center text-primary-foreground overflow-hidden"
     >
-      <div className="absolute inset-0 opacity-10">
-         {/* You can add a subtle background pattern or image here if desired */}
+      {/* Background Image */}
+      <div className="absolute inset-0 z-0"> {/* Use z-0 to place it behind content */}
+        <Image
+          src={HeroBackgroundImage}
+          alt="Background image for hero section" // Descriptive alt text
+          layout="fill" // Image will fill the parent div
+          objectFit="cover" // Cover the area, crop if necessary
+          quality={100} // Adjust quality as needed
+          className="pointer-events-none" // Prevents image from interfering with mouse events
+        />
       </div>
-      <div className="container mx-auto px-4 text-center z-10">
-        <div className="max-w-3xl mx-auto">
-          <h1 className="text-4xl md:text-6xl font-bold mb-6 font-headline leading-tight animate-fade-in-down">
-            Jertine Tech: <br className="md:hidden" /> Your Digital Foundation. <span className="text-accent">Simplified.</span>
-          </h1>
-          <p className="text-lg md:text-xl text-primary-foreground/80 mb-10 max-w-2xl mx-auto animate-fade-in-up">
-            We provide integrated digital solutions—coding, graphic design, and desktop support—tailored for small and medium-sized businesses in Cape Town and South Africa. Affordable, rapid, and reliable.
-          </p>
-          <div className="space-x-4 animate-fade-in-up animation-delay-300">
-            <Button size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90" onClick={handleScrollToContact}>
-              Get a Free Consultation
-            </Button>
-            <Button
-              size="lg"
-              variant="outline"
-              className="border-primary-foreground text-primary bg-background hover:bg-primary-foreground hover:text-accent data-[state=open]:bg-primary-foreground data-[state=open]:text-[hsl(var(--primary))]"
-              onClick={() => {
-                const solutionsSection = document.getElementById('solutions');
-                if (solutionsSection) {
-                  solutionsSection.scrollIntoView({ behavior: 'smooth' });
-                }
-              }}
-            >
-              Our Solutions
-            </Button>
-          </div>
+
+      {/* Overlay (adjust color and opacity as needed) */}
+      <div className="absolute inset-0 z-10 bg-black opacity-50"> {/* Adjust opacity and color */}
+      </div>
+
+      {/* Content (Text, Buttons, etc.) */}
+      <div className="container mx-auto px-4 text-center relative z-20"> {/* Use z-20 to place it above the overlay */}
+        <h1 className="text-4xl md:text-6xl font-bold mb-6 font-headline leading-tight">
+          Your Digital Partner in <span className="text-accent">Cape Town</span>
+        </h1>
+        <p className="text-xl mb-10 max-w-3xl mx-auto text-primary-foreground/90">
+          Empowering SMEs with integrated, affordable digital solutions to thrive in today's competitive landscape.
+        </p>
+        <div className="flex justify-center space-x-4">
+          <Button size="lg"  variant="customMagenta" asChild className="font-button">
+            <Link href="#solutions">
+              Our Services <ArrowRight className="ml-2 h-5 w-5" />
+            </Link>
+          </Button>
+          <Button size="lg" variant="secondary" asChild className="font-button">
+            <Link href="#contact">
+              Get in Touch
+            </Link>
+          </Button>
         </div>
       </div>
-       {/* Decorative elements - optional */}
-       <div className="absolute -bottom-1/4 -left-1/4 w-1/2 h-1/2 bg-accent/10 rounded-full filter blur-3xl opacity-50 animate-pulse-slow"></div>
-       <div className="absolute -top-1/4 -right-1/4 w-1/2 h-1/2 bg-secondary/20 rounded-full filter blur-3xl opacity-50 animate-pulse-slower"></div>
     </section>
   );
 }
+
 
 // Add to globals.css if you want these animations:
 /*
